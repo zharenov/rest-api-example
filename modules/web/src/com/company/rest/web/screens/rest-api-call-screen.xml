@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.rest.web.screens.RestApiCallScreen"
+        messagesPack="com.company.rest.web.screens">
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="restApiResult"
+            margin="true"
+            spacing="true">
+        <button id="fillBox"
+                caption="Fill"
+                invoke="fillBox"/>
+        <richTextArea id="restApiResult"/>
+    </layout>
+</window>

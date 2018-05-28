@@ -1,0 +1,6 @@
+rootProject.name = 'rest-api-example'
+def modulePrefix = 'app'
+include(":${modulePrefix}-global", ":${modulePrefix}-gui", ":${modulePrefix}-web", ":${modulePrefix}-core")
+project(":${modulePrefix}-global").projectDir = new File(settingsDir, 'modules/global')
+project(":${modulePrefix}-web").projectDir = new File(settingsDir, 'modules/web')
+project(":${modulePrefix}-core").projectDir = new File(settingsDir, 'modules/core')
